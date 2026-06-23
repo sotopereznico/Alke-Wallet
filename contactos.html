@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Contactos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Alke Wallet</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="menuPrincipal.html" class="nav-button">Panel</a></li>
+                <li class="nav-item"><a href="realizarTransferencias.html" class="nav-button">Transferir</a></li>
+                <li class="nav-item"><a href="contactos.html" class="nav-button active">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-container">
+
+        <div class="contacts-section">
+            
+            <div class="contacts-header">
+                <h1 class="contacts-title">Agenda de Contactos</h1>
+                <a href="agregarContacto.html" class="btn-add-contact">+ Agregar Contacto</a>
+            </div>
+
+            <div class="table-responsive">
+                <table class="contacts-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre / RUT</th>
+                            <th>Banco</th>
+                            <th>Tipo de Cuenta</th>
+                            <th>N° de Cuenta</th>
+                            <th>Email</th>
+                            <th style="text-align: center;">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contacts-body">
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Juan Pérez</strong>
+                                    <span class="contact-alias">11.222.333-4</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Alke Bank</span></td>
+                            <td><span class="account-number">Cuenta Corriente</span></td>
+                            <td><span class="account-number">2356895623</span></td>
+                            <td><span class="bank-badge">juan.perez@alke.cl</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>María Rodríguez</strong>
+                                    <span class="contact-alias">15.555.666-7</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">FinTech Bank</span></td>
+                            <td><span class="account-number">Cuenta Vista/Rut</span></td>
+                            <td><span class="account-number">9876543210</span></td>
+                            <td><span class="bank-badge">maria.rodriguez@mail.com</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Carlos Gómez</strong>
+                                    <span class="contact-alias">18.888.999-k</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Banco de Chile</span></td>
+                            <td><span class="account-number">Cuenta Corriente</span></td>
+                            <td><span class="account-number">1122334455</span></td>
+                            <td><span class="bank-badge">carlos.gomez@gmail.com</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Ana Martínez</strong>
+                                    <span class="contact-alias">14.342.125-6</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">BCI</span></td>
+                            <td><span class="account-number">Cuenta Vista/Rut</span></td>
+                            <td><span class="account-number">5544332211</span></td>
+                            <td><span class="bank-badge">ana.martinez@outlook.com</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Luis Fernández</strong>
+                                    <span class="contact-alias">16.741.852-9</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Banco Estado</span></td>
+                            <td><span class="account-number">Cuenta de Ahorro</span></td>
+                            <td><span class="account-number">9988776655</span></td>
+                            <td><span class="bank-badge">luis.f@bancoestado.cl</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Elena Ríos</strong>
+                                    <span class="contact-alias">12.963.852-1</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Santander</span></td>
+                            <td><span class="account-number">Cuenta Corriente</span></td>
+                            <td><span class="account-number">4455667788</span></td>
+                            <td><span class="bank-badge">elena.rios@santander.cl</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Pedro Morales</strong>
+                                    <span class="contact-alias">17.159.357-4</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Scotiabank</span></td>
+                            <td><span class="account-number">Cuenta Vista/Rut</span></td>
+                            <td><span class="account-number">1212343456</span></td>
+                            <td><span class="bank-badge">p.morales@scotiabank.cl</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Sofía Castro</strong>
+                                    <span class="contact-alias">19.258.147-3</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Itaú</span></td>
+                            <td><span class="account-number">Cuenta Corriente</span></td>
+                            <td><span class="account-number">9898767654</span></td>
+                            <td><span class="bank-badge">sofia.castro@itau.cl</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Ricardo Soto</strong>
+                                    <span class="contact-alias">13.456.789-0</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Alke Bank</span></td>
+                            <td><span class="account-number">Cuenta Corriente</span></td>
+                            <td><span class="account-number">2356895645</span></td>
+                            <td><span class="bank-badge">ricardo.soto@alke.cl</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contact-name-block">
+                                    <strong>Camila Silva</strong>
+                                    <span class="contact-alias">15.987.654-2</span>
+                                </div>
+                            </td>
+                            <td><span class="bank-badge">Banco Falabella</span></td>
+                            <td><span class="account-number">Cuenta Vista/Rut</span></td>
+                            <td><span class="account-number">7766554433</span></td>
+                            <td><span class="bank-badge">camila.silva@falabella.cl</span></td>
+                            <td style="text-align: center;"><button class="btn-edit">Transferir</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/styles/JS/scripts.js"></script>
+</body>
+</html>

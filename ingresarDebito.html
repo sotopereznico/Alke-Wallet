@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Fondos - Débito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+</head>
+
+<body>
+
+    <!-- Barra de navegación idéntica a tus otras pantallas -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Alke Wallet</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="menuPrincipal.html" class="nav-button">Panel</a></li>
+                <li class="nav-item"><a href="realizarTransferencias.html" class="nav-button">Transferir</a></li>
+                <li class="nav-item"><a href="depositar.html" class="nav-button">Depositar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <!-- 1. Monto Total Superior -->
+        <div class="balance-section" style="margin: 0 auto 25px auto; text-align: center;">
+            <div class="balance-label">Fondos Totales de la Billetera</div>
+            <div class="balance-amount" id="wallet-total">$0.00</div>
+        </div>
+
+        <h2 class="page-title">Cargar dinero desde Tarjeta</h2>
+
+        <div class="card-section">
+            <!-- 2. Esquema de Tarjeta Ficticia -->
+            <div class="credit-card">
+                <div class="card-type">Débito</div>
+                <div class="card-chip"></div>
+                <div class="card-number">•••• •••• •••• 4321</div>
+                <div class="card-details">
+                    <div>
+                        <div>Titular</div>
+                        <div class="card-holder">Juan Pérez</div>
+                    </div>
+                    <div>
+                        <div>Vence</div>
+                        <div>12/29</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Formulario de Carga -->
+            <form id="load-funds-form">
+                <div class="form-group">
+                    <label for="amount">Monto a ingresar ($)</label>
+                    <input type="number" id="amount" min="1" placeholder="Ej: 5000" required>
+                </div>
+                <button type="submit" class="btn-submit">Confirmar Ingreso</button>
+            </form>
+
+            <!-- 4. Botón diferente para agregar una nueva tarjeta -->
+            <button type="button" id="btn-add-card" class="btn-secondary btn-new-card">+ Vincular nueva tarjeta de
+                débito</button>
+        </div>
+    </main>
+
+    <!-- Notificación flotante (Toast) -->
+    <div id="toast" class="toast">¡Fondos cargados exitosamente!</div>
+
+    <!-- Scripts de integración -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/styles/JS/scripts.js"></script>
+</body>
+
+</html>
