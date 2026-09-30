@@ -16,7 +16,6 @@ Un prototipo de interfaz web para una billetera virtual. Este proyecto emula las
 
 ## 📸 Capturas de Pantalla
 
-*(Reemplaza las rutas de las imágenes con capturas reales de tu proyecto)*
 
 | Login | Dashboard |
 |---|---|
