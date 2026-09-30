@@ -11,7 +11,7 @@ Un prototipo de interfaz web para una billetera virtual. Este proyecto emula las
 ## 🛠️ Tecnologías Utilizadas
 
 * **HTML5:** Estructuración semántica del contenido.
-* **CSS3:** Estilos personalizados y diseño visual (incluyendo efectos como *Glassmorphism* si aplica).
+* **CSS3:** Estilos personalizados y diseño visual.
 * **Bootstrap:** Framework de diseño para agilizar la responsividad y los componentes de la interfaz.
 
 ## 📸 Capturas de Pantalla
@@ -28,6 +28,11 @@ Para visualizar este proyecto en tu máquina local, sigue estos pasos:
 1. Clona este repositorio usando Git:
    ```bash
    git clone [https://github.com/sotopereznico/Alke-Wallet.git](https://github.com/sotopereznico/Alke-Wallet.git)
+
+## Link Github pages
+
+https://sotopereznico.github.io/Alke-Wallet/
+   
 
 
 ## Nicolás Soto - Desarrollo inicial - sotopereznico
